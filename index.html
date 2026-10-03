@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Zainab Enifeni — Product Management Portfolio">
+  <title>Zainab Enifeni | Product Manager</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --navy: #102a43;
+      --blue: #2f6f9f;
+      --sky: #dcecf7;
+      --cream: #fbf7ef;
+      --gold: #c99a4a;
+      --ink: #243447;
+      --muted: #66788a;
+      --white: #ffffff;
+      --line: #dfe7ed;
+      --shadow: 0 18px 50px rgba(16, 42, 67, .10);
+      --radius: 24px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "DM Sans", sans-serif;
+      color: var(--ink);
+      background: var(--cream);
+      line-height: 1.7;
+    }
+    a { color: inherit; text-decoration: none; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: auto; }
+    nav {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(251,247,239,.92);
+      backdrop-filter: blur(14px);
+      border-bottom: 1px solid rgba(223,231,237,.8);
+    }
+    .nav-inner {
+      height: 76px; display: flex; align-items: center; justify-content: space-between;
+    }
+    .brand { font-weight: 700; color: var(--navy); letter-spacing: .02em; }
+    .nav-links { display: flex; gap: 28px; align-items: center; font-size: .94rem; color: var(--muted); }
+    .nav-links a:hover { color: var(--navy); }
+    .nav-cta {
+      padding: 10px 17px; border-radius: 999px; background: var(--navy);
+      color: white !important;
+    }
+    .hero { padding: 110px 0 90px; overflow: hidden; }
+    .hero-grid {
+      display: grid; grid-template-columns: 1.15fr .85fr; gap: 70px; align-items: center;
+    }
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 8px;
+      color: var(--blue); font-weight: 700; font-size: .84rem;
+      text-transform: uppercase; letter-spacing: .13em; margin-bottom: 20px;
+    }
+    .eyebrow::before { content: ""; width: 28px; height: 2px; background: var(--gold); }
+    h1 {
+      font-family: "Playfair Display", serif; color: var(--navy);
+      font-size: clamp(3.2rem, 7vw, 6.1rem); line-height: .98;
+      letter-spacing: -.045em; margin-bottom: 26px;
+    }
+    .hero p { max-width: 650px; font-size: 1.18rem; color: var(--muted); }
+    .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      padding: 13px 20px; border-radius: 999px; font-weight: 700;
+      border: 1px solid var(--navy); transition: .2s ease;
+    }
+    .btn.primary { background: var(--navy); color: white; }
+    .btn.secondary { color: var(--navy); background: transparent; }
+    .btn:hover { transform: translateY(-2px); box-shadow: 0 8px 20px rgba(16,42,67,.12); }
+    .hero-card {
+      background: linear-gradient(145deg, #dcecf7, #f6f0df);
+      min-height: 390px; border-radius: 40px; position: relative;
+      box-shadow: var(--shadow); padding: 32px; overflow: hidden;
+    }
+    .hero-card::before, .hero-card::after {
+      content: ""; position: absolute; border-radius: 50%; border: 1px solid rgba(47,111,159,.25);
+    }
+    .hero-card::before { width: 290px; height: 290px; right: -100px; top: -80px; }
+    .hero-card::after { width: 180px; height: 180px; left: -70px; bottom: -50px; }
+    .mini-card {
+      position: absolute; background: rgba(255,255,255,.78);
+      border: 1px solid rgba(255,255,255,.8); backdrop-filter: blur(8px);
+      border-radius: 20px; padding: 20px; box-shadow: 0 15px 35px rgba(16,42,67,.08);
+    }
+    .mini-card.one { top: 55px; left: 45px; width: 220px; }
+    .mini-card.two { right: 35px; top: 175px; width: 210px; }
+    .mini-card.three { left: 80px; bottom: 38px; width: 250px; }
+    .mini-label { font-size: .75rem; color: var(--muted); text-transform: uppercase; letter-spacing: .1em; }
+    .mini-title { font-weight: 700; color: var(--navy); margin-top: 5px; }
+    section { padding: 90px 0; }
+    .section-head { max-width: 700px; margin-bottom: 42px; }
+    .section-head h2 {
+      font-family: "Playfair Display", serif; font-size: clamp(2.1rem, 4vw, 3.3rem);
+      color: var(--navy); line-height: 1.1; margin-bottom: 13px;
+    }
+    .section-head p { color: var(--muted); }
+    .blue-section { background: var(--navy); color: white; }
+    .blue-section .section-head h2 { color: white; }
+    .blue-section .section-head p { color: #c8d7e4; }
+    .thinking-grid, .skills-grid { display: grid; grid-template-columns: repeat(3,1fr); gap: 18px; }
+    .thinking-card {
+      padding: 30px; border-radius: var(--radius); background: rgba(255,255,255,.07);
+      border: 1px solid rgba(255,255,255,.12);
+    }
+    .thinking-card span { color: #bcd9eb; font-size: .8rem; font-weight: 700; letter-spacing: .12em; }
+    .thinking-card h3 { margin: 12px 0 8px; font-size: 1.3rem; }
+    .thinking-card p { color: #c8d7e4; }
+    .projects { display: grid; grid-template-columns: repeat(2,1fr); gap: 22px; }
+    .project {
+      background: white; border: 1px solid var(--line); border-radius: var(--radius);
+      padding: 30px; min-height: 300px; display: flex; flex-direction: column;
+      box-shadow: 0 8px 30px rgba(16,42,67,.04); transition: .25s ease;
+    }
+    .project:hover { transform: translateY(-5px); box-shadow: var(--shadow); }
+    .project.featured { background: linear-gradient(145deg, #edf6fb, #fff); }
+    .tag {
+      display: inline-block; width: fit-content; padding: 6px 10px; border-radius: 999px;
+      background: var(--sky); color: var(--blue); font-size: .74rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: .06em;
+    }
+    .project h3 { font-family: "Playfair Display", serif; color: var(--navy); font-size: 2rem; margin: 20px 0 7px; }
+    .project h4 { color: var(--blue); font-size: 1rem; margin-bottom: 14px; }
+    .project p { color: var(--muted); }
+    .project .arrow { margin-top: auto; padding-top: 25px; color: var(--navy); font-weight: 700; }
+    .skills-grid { grid-template-columns: repeat(4,1fr); }
+    .skill { background: white; border: 1px solid var(--line); border-radius: 20px; padding: 24px; }
+    .skill h3 { color: var(--navy); font-size: 1rem; margin-bottom: 10px; }
+    .skill p { color: var(--muted); font-size: .92rem; }
+    .about {
+      display: grid; grid-template-columns: .75fr 1.25fr; gap: 70px; align-items: start;
+    }
+    .about-mark {
+      background: var(--navy); color: white; border-radius: 35px; min-height: 320px;
+      display: grid; place-items: center; font-family: "Playfair Display", serif;
+      font-size: 6rem; box-shadow: var(--shadow);
+    }
+    .about-copy h2 { font-family: "Playfair Display", serif; color: var(--navy); font-size: 3rem; margin-bottom: 18px; }
+    .about-copy p { color: var(--muted); margin-bottom: 16px; }
+    .contact {
+      text-align: center; background: linear-gradient(145deg, #dcecf7, #f6f0df);
+      border-radius: 35px; padding: 70px 30px;
+    }
+    .contact h2 { font-family: "Playfair Display", serif; color: var(--navy); font-size: clamp(2.3rem, 5vw, 4rem); }
+    .contact p { color: var(--muted); max-width: 600px; margin: 15px auto 0; }
+    footer { padding: 35px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: .9rem; }
+    .footer-inner { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
+    @media (max-width: 850px) {
+      .hero-grid, .about { grid-template-columns: 1fr; }
+      .thinking-grid, .skills-grid { grid-template-columns: 1fr 1fr; }
+      .hero { padding-top: 75px; }
+      .hero-card { min-height: 330px; }
+    }
+    @media (max-width: 620px) {
+      .wrap { width: min(100% - 28px, 1120px); }
+      .nav-links a:not(.nav-cta) { display: none; }
+      .projects, .thinking-grid, .skills-grid { grid-template-columns: 1fr; }
+      section { padding: 65px 0; }
+      .hero { padding: 65px 0; }
+      h1 { font-size: 3.5rem; }
+      .mini-card.one { left: 22px; }
+      .mini-card.two { right: 18px; }
+      .mini-card.three { left: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="wrap nav-inner">
+      <a class="brand" href="#top">ZAINAB ENIFENI</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#about">About</a>
+        <a href="#skills">Toolkit</a>
+        <a class="nav-cta" href="#contact">Let's connect</a>
+      </div>
+    </div>
+  </nav>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <div>
+          <div class="eyebrow">Product Management</div>
+          <h1>I turn messy problems into products people can actually use.</h1>
+          <p>I'm Zainab, a product thinker passionate about understanding people, solving meaningful problems, and turning ideas into thoughtful digital experiences.</p>
+          <div class="actions">
+            <a class="btn primary" href="#work">View my work →</a>
+            <a class="btn secondary" href="#contact">Let's connect</a>
+          </div>
+        </div>
+        <div class="hero-card" aria-label="Product thinking visual">
+          <div class="mini-card one">
+            <div class="mini-label">Discover</div>
+            <div class="mini-title">Understand the real problem.</div>
+          </div>
+          <div class="mini-card two">
+            <div class="mini-label">Decide</div>
+            <div class="mini-title">Make deliberate trade-offs.</div>
+          </div>
+          <div class="mini-card three">
+            <div class="mini-label">Build & learn</div>
+            <div class="mini-title">Turn decisions into useful experiences.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="blue-section">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">How I think</div>
+          <h2>Curiosity first. Clarity next. Execution always.</h2>
+          <p>I enjoy the space between an ambiguous problem and a product decision that the team can actually act on.</p>
+        </div>
+        <div class="thinking-grid">
+          <div class="thinking-card">
+            <span>01 — DISCOVER</span>
+            <h3>Get close to the problem.</h3>
+            <p>User needs, context, research, competitive signals and assumptions come before solutions.</p>
+          </div>
+          <div class="thinking-card">
+            <span>02 — DECIDE</span>
+            <h3>Choose what matters.</h3>
+            <p>I use evidence, prioritization frameworks and constraints to make deliberate trade-offs.</p>
+          </div>
+          <div class="thinking-card">
+            <span>03 — BUILD & LEARN</span>
+            <h3>Turn thinking into action.</h3>
+            <p>I translate decisions into flows, requirements, metrics and experiments that can move a product forward.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="work">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Selected work</div>
+          <h2>Products, problems & decisions.</h2>
+          <p>A mix of real-world product work and self-initiated 0→1 case studies.</p>
+        </div>
+        <div class="projects">
+          <a class="project featured" href="#">
+            <span class="tag">Real-world · Creator Economy</span>
+            <h3>Nestuge</h3>
+            <h4>Keeping creators and customers on-platform.</h4>
+            <p>Competitive research, opportunity discovery, prioritization, PRD and feature delivery considerations for a creator economy platform.</p>
+            <div class="arrow">View case study →</div>
+          </a>
+          <a class="project featured" href="#">
+            <span class="tag">Real-world · HealthTech · AI</span>
+            <h3>Clinsights</h3>
+            <h4>AI for speed. Doctors for judgment.</h4>
+            <p>Requirements and user flows for an AI-assisted laboratory-result experience with human clinical oversight.</p>
+            <div class="arrow">View case study →</div>
+          </a>
+          <a class="project" href="#">
+            <span class="tag">0→1 · AI · Research</span>
+            <h3>CareNest</h3>
+            <h4>Personalized guidance for first-time mothers.</h4>
+            <p>A research-led caregiving concept built around baby profiles, care history and contextual AI guidance.</p>
+            <div class="arrow">View case study →</div>
+          </a>
+          <a class="project" href="#">
+            <span class="tag">Community · Retention</span>
+            <h3>TTC Community</h3>
+            <h4>From fragmented conversations to lasting belonging.</h4>
+            <p>An anonymous, persistent support community designed around continuity, reciprocity and emotional safety.</p>
+            <div class="arrow">View case study →</div>
+          </a>
+          <a class="project" href="#">
+            <span class="tag">Marketplace · Operations</span>
+            <h3>Event Rental Marketplace</h3>
+            <h4>From party essentials to an event ecosystem.</h4>
+            <p>A two-sided marketplace concept connecting event customers with rental inventory, booking and logistics.</p>
+            <div class="arrow">View case study →</div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section id="skills" style="background:#f3eee4;">
+      <div class="wrap">
+        <div class="section-head">
+          <div class="eyebrow">Product toolkit</div>
+          <h2>What I bring to the table.</h2>
+          <p>The tools and thinking patterns I use to move from ambiguity to action.</p>
+        </div>
+        <div class="skills-grid">
+          <div class="skill"><h3>Product Discovery</h3><p>User interviews · Problem framing · Journey mapping · Competitive research</p></div>
+          <div class="skill"><h3>Product Strategy</h3><p>Prioritization · Opportunity identification · MVP definition · Trade-offs</p></div>
+          <div class="skill"><h3>Product Delivery</h3><p>PRDs · User stories · Acceptance criteria · Product flows · Agile collaboration</p></div>
+          <div class="skill"><h3>Product Analytics</h3><p>North Star thinking · Activation · Retention · Conversion · Funnel thinking</p></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about">
+      <div class="wrap about">
+        <div class="about-mark">ZE</div>
+        <div class="about-copy">
+          <div class="eyebrow">A little about me</div>
+          <h2>Hi, I'm Zainab.</h2>
+          <p>I'm a product thinker who enjoys turning messy problems into structured product decisions.</p>
+          <p>My approach is rooted in curiosity, empathy and practical execution. I like getting close to the problem, asking better questions, challenging assumptions and figuring out what is actually worth building.</p>
+          <p>I've worked on products spanning creator economy, health technology, AI-assisted experiences, communities and marketplaces — through real-world internship experience and self-initiated product work.</p>
+          <p>I'm particularly interested in products that sit at the intersection of <strong>people + technology</strong>, where understanding the human problem is just as important as understanding the technology.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="wrap">
+        <div class="contact">
+          <div class="eyebrow" style="justify-content:center;">Let's talk product</div>
+          <h2>Have a product problem worth unpacking?</h2>
+          <p>I'd love to connect, learn about the problem you're solving, and talk product.</p>
+          <div class="actions" style="justify-content:center;">
+            <a class="btn primary" href="https://www.linkedin.com/in/zainab-enifeni/" target="_blank" rel="noopener">LinkedIn →</a>
+            <a class="btn secondary" href="mailto:YOUR-EMAIL@example.com">Email me</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-inner">
+      <span>© 2026 Zainab Enifeni</span>
+      <span>Product Management Portfolio</span>
+    </div>
+  </footer>
+</body>
+</html>
