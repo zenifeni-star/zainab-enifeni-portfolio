@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
+<meta name="description" content="TTC Community product exploration — Zainab Enifeni, Product Manager">
+<title>TTC Community | Zainab Enifeni</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+<style>
+:root{--navy:#102a43;--blue:#2f6f9f;--sky:#dcecf7;--cream:#fbf7ef;--gold:#c99a4a;--ink:#243447;--muted:#66788a;--white:#fff;--line:#dfe7ed;--shadow:0 18px 50px rgba(16,42,67,.10);--radius:24px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}nav{position:sticky;top:0;z-index:10;background:rgba(251,247,239,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,231,237,.8)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;color:var(--navy)}.back{font-size:.94rem;color:var(--muted)}.back:hover{color:var(--navy)}.hero{padding:90px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.13em;margin-bottom:18px}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}h1,h2,.serif{font-family:"Playfair Display",serif;color:var(--navy)}h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.96;letter-spacing:-.045em;max-width:900px}.dek{font-size:1.25rem;color:var(--muted);max-width:760px;margin-top:25px}.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:45px}.meta div{background:white;border:1px solid var(--line);border-radius:18px;padding:18px}.meta small{display:block;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-size:.68rem;font-weight:700}.meta strong{display:block;color:var(--navy);margin-top:5px}.hero-panel{margin-top:55px;background:linear-gradient(145deg,#dcecf7,#f6f0df);border-radius:32px;padding:38px;box-shadow:var(--shadow)}.hero-panel .label{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:700}.hero-panel blockquote{font-family:"Playfair Display",serif;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.25;color:var(--navy);margin-top:10px}section{padding:78px 0}.section-head{max-width:730px;margin-bottom:36px}.section-head h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.08;margin-bottom:12px}.section-head p,.body-copy{color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px}.card h3{color:var(--navy);font-size:1.2rem;margin-bottom:9px}.card p{color:var(--muted)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:stretch}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}.step .num{font-size:.7rem;letter-spacing:.1em;color:var(--blue);font-weight:700}.step strong{display:block;color:var(--navy);margin-top:8px}.step p{font-size:.9rem;color:var(--muted);margin-top:6px}.dark{background:var(--navy);color:white}.dark h2,.dark h3{color:white}.dark .section-head p,.dark .card p{color:#c8d7e4}.dark .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}.dark .card h3{color:white}.competitors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.competitor{padding:22px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.competitor strong{display:block;margin-bottom:8px}.competitor p{color:#c8d7e4;font-size:.9rem}.insight{margin-top:28px;border-left:3px solid var(--gold);padding:5px 0 5px 22px;font-family:"Playfair Display",serif;font-size:1.55rem;line-height:1.35}.matrix{display:grid;grid-template-columns:110px 1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:10px;max-width:820px;margin:30px auto 0}.axis{display:grid;place-items:center;color:var(--muted);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.quad{min-height:180px;border:1px solid var(--line);border-radius:20px;padding:20px;background:white}.quad.high{background:#edf6fb}.quad small{color:var(--muted);font-weight:700}.pill{display:inline-block;margin:10px 7px 0 0;padding:7px 11px;border-radius:999px;background:var(--sky);color:var(--blue);font-size:.78rem;font-weight:700}.decision{margin-top:32px;background:linear-gradient(145deg,#102a43,#183e5c);color:white;border-radius:30px;padding:34px}.decision .big{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3rem);line-height:1.15}.decision p{color:#c8d7e4;margin-top:12px;max-width:800px}.system{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ticket{background:white;border:1px solid var(--line);border-radius:20px;padding:24px}.ticket .tno{font-size:.7rem;color:var(--blue);font-weight:700;letter-spacing:.1em}.ticket h3{margin:7px 0;color:var(--navy);font-size:1.05rem}.ticket p{color:var(--muted);font-size:.9rem}.ticket .tag{display:inline-block;margin-top:13px;padding:5px 9px;background:#edf6fb;border-radius:999px;font-size:.7rem;color:var(--blue);font-weight:700}.auto-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:28px 0}.auto-flow span{background:white;border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--navy);font-weight:600;font-size:.88rem}.auto-flow b{color:var(--gold)}.evidence{background:#f3eee4}.criteria{display:grid;grid-template-columns:1fr 1fr;gap:14px}.criterion{background:white;border-radius:18px;padding:20px;border:1px solid var(--line)}.criterion strong{color:var(--navy)}.criterion p{color:var(--muted);font-size:.9rem;margin-top:5px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.metric strong{color:var(--navy);display:block}.metric p{font-size:.88rem;color:var(--muted);margin-top:5px}.note{font-size:.82rem;color:var(--muted);margin-top:16px}.reflection{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.quote{background:linear-gradient(145deg,#dcecf7,#f6f0df);border-radius:28px;padding:32px;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.55rem;line-height:1.35}.next{padding:75px 0}.next-card{background:var(--navy);border-radius:32px;padding:42px;color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}.next-card h2{color:white;font-size:2.3rem}.next-card p{color:#c8d7e4}.btn{display:inline-block;background:white;color:var(--navy);padding:12px 18px;border-radius:999px;font-weight:700;white-space:nowrap}footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}@media(max-width:800px){.meta,.flow,.competitors,.system,.metrics{grid-template-columns:1fr 1fr}.two,.reflection{grid-template-columns:1fr}.matrix{grid-template-columns:70px 1fr 1fr}.next-card{display:block}.next-card .btn{margin-top:20px}}@media(max-width:560px){.wrap{width:min(100% - 28px,1080px)}.hero{padding-top:60px}.meta,.flow,.competitors,.system,.metrics,.criteria{grid-template-columns:1fr}.matrix{display:block}.axis{margin:10px}.quad{margin-bottom:10px;min-height:auto}section{padding:58px 0}h1{font-size:3.5rem}.hero-panel{padding:26px}.next-card{padding:30px}}
+</style>
+</head>
+<body>
+<nav><div class="wrap nav-inner"><a class="brand" href="index.html">ZAINAB ENIFENI</a><a class="back" href="index.html#work">← Back to selected work</a></div></nav>
+<main>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">Product Exploration · Community Systems · Trust & Retention</div>
+<h1>TTC Community</h1>
+<p class="dek">From fragmented conversations to lasting belonging — a concept for a pseudonymous support community where people navigating trying to conceive can be known without being publicly exposed.</p>
+<div class="meta">
+<div><small>Project Type</small><strong>Self-initiated Concept</strong></div>
+<div><small>Role</small><strong>Product Manager</strong></div>
+<div><small>Focus</small><strong>Community · Safety · Retention</strong></div>
+<div><small>Status</small><strong>Hypothesis-led · Not yet validated</strong></div>
+</div>
+<div class="hero-panel">
+<div class="label">Core product hypothesis</div>
+<blockquote>Anonymous enough to feel safe. Contextual enough to feel known.</blockquote>
+</div></div></header>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">01 · The opportunity</div>
+<h2>The internet already has TTC conversations. What it often lacks is continuity.</h2>
+<p>People navigating TTC can find moments of support in social-media comments, forums and group chats. The product opportunity I wanted to explore was not simply “another place to talk,” but whether persistent pseudonymous identity, journey context and recurring relationships could turn fragmented interactions into a genuine sense of belonging.</p></div>
+<div class="decision">
+<div class="big">Concept question → Can a community make support feel continuous without making vulnerability feel public?</div>
+<p>This is a product hypothesis, not a research finding. The concept has not yet been validated through external user interviews, so the case study focuses on the system I would design and the assumptions I would test.</p>
+</div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><div class="eyebrow">02 · Product principle</div>
+<h2>Privacy shouldn't require becoming a stranger.</h2>
+<p>Full public identity can make sensitive conversations harder. Total anonymity can make relationships feel disposable. TTC Community explores a middle ground: persistent pseudonymous profiles that protect real-world identity while allowing trust and familiarity to accumulate over time.</p></div>
+<div class="two">
+<div class="card"><h3>Pseudonymous by default</h3><p>Members choose a persistent display identity and avatar rather than exposing their real name, workplace, family network or public social profile.</p></div>
+<div class="card"><h3>Context without exposure</h3><p>Members can voluntarily share lightweight journey context — for example IVF, between cycles or trying for a particular length of time — so they do not have to retell their story in every conversation.</p></div>
+</div>
+<div class="insight">The goal isn't anonymity for anonymity's sake. It is to let someone feel recognised inside the community without making their fertility journey publicly identifiable.</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">03 · Designing emotional agency</div>
+<h2>People should control what support they want — and what they are ready to receive.</h2>
+<p>TTC contains emotionally conflicting moments. One member may desperately need a success story; another may have received devastating news that morning. Instead of silencing either person, the product can give both more control over the experience.</p></div>
+<div class="system">
+<div class="ticket"><span class="tno">POST INTENT</span><h3>Say what you need</h3><p>Posts can carry lightweight context such as Vent, Advice wanted, No advice please, Treatment update, Loss or Success.</p><span class="tag">Expression · Context</span></div>
+<div class="ticket"><span class="tno">CONTENT CONTROL</span><h3>Choose what you can receive</h3><p>Members can temporarily mute emotionally difficult categories without asking other people to hide their experiences.</p><span class="tag">Agency · Emotional safety</span></div>
+<div class="ticket"><span class="tno">PRIVATE CONTACT</span><h3>DMs require consent</h3><p>Private messaging begins with a request. The recipient decides whether to accept or decline before a private conversation can start.</p><span class="tag">Boundaries · Consent</span></div>
+</div>
+<div class="hero-panel" style="margin-top:28px">
+<div class="label">Design principle</div>
+<blockquote>You control how much of yourself you reveal, what kind of support you want, and what you're emotionally ready to receive.</blockquote>
+</div>
+</div></section>
+
+<section class="evidence"><div class="wrap">
+<div class="section-head"><div class="eyebrow">04 · Community architecture</div>
+<h2>Start concentrated. Fragment only when the community earns it.</h2>
+<p>A community can have excellent features and still fail if every room is empty. I would begin with one active general community rather than launching dozens of journey-specific groups on day one.</p></div>
+<div class="flow">
+<div class="step"><span class="num">01</span><strong>One shared home</strong><p>A general TTC community concentrates activity and gives every new member somewhere alive to enter.</p></div>
+<div class="step"><span class="num">02</span><strong>Limited focused spaces</strong><p>Only 2–3 optional journey spaces would be introduced where distinct needs and sufficient activity justify them.</p></div>
+<div class="step"><span class="num">03</span><strong>Persistent presence</strong><p>Familiar pseudonyms, journey context, recurring threads and visible activity help relationships build instead of resetting with every post.</p></div>
+<div class="step"><span class="num">04</span><strong>Participation at different energies</strong><p>Members can lurk, vent, ask, encourage or simply return to familiar people. Contribution does not have to look the same every day.</p></div>
+</div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><div class="eyebrow">05 · The cold-start problem</div>
+<h2>A beautiful empty community is still an empty community.</h2>
+<p>The first product risk is liquidity: why would the first members stay if there is nobody to talk to? Rather than acquiring isolated users one by one, I would seed the community through existing TTC social groups and trusted admins.</p></div>
+<div class="two">
+<div class="card"><h3>Cohort seeding</h3><p>Partner with a small number of existing TTC community admins and invite clusters of members together. Familiarity travels with the cohort, giving the new space immediate human activity and social proof.</p></div>
+<div class="card"><h3>AI as facilitator — never a fake member</h3><p>Clearly labelled platform prompts can spark check-ins, polls, welcome threads and conversations during quiet periods. AI should create the spark, not impersonate people or manufacture trust.</p></div>
+</div>
+<div class="insight">A useful health signal: over time, meaningful conversations should increasingly be member-initiated rather than dependent on platform prompts.</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">06 · Switching value</div>
+<h2>Why leave a Facebook group, WhatsApp chat or Reddit thread?</h2>
+<p>Pseudonymity alone is not enough; other platforms can approximate it. The stronger switching value comes from combining privacy with journey-aware context, emotional controls and product rules built specifically for TTC.</p></div>
+<div class="criteria">
+<div class="criterion"><strong>Known without being exposed</strong><p>Persistent pseudonymous identity lets relationships accumulate without tying the journey to a public social graph.</p></div>
+<div class="criterion"><strong>Context without retelling</strong><p>Voluntary journey context helps members understand where someone is coming from before responding.</p></div>
+<div class="criterion"><strong>Emotional control</strong><p>Members can choose whether they have capacity for success stories, loss, advice or other sensitive categories at a particular moment.</p></div>
+<div class="criterion"><strong>Purpose-built boundaries</strong><p>Consent-based DMs and TTC-specific moderation are part of the product system rather than rules bolted onto a general social network.</p></div>
+</div>
+</div></section>
+
+<section class="evidence"><div class="wrap">
+<div class="section-head"><div class="eyebrow">07 · Moderation & medical safety</div>
+<h2>Protect expression. Intervene at harm.</h2>
+<p>The community should not cap difficult emotions. Members need room to talk honestly about grief, anger, jealousy, treatment failure and exhaustion. The safety boundary appears when lived experience turns into medical instruction for someone else.</p></div>
+<div class="two">
+<div class="card"><h3>Allowed: sharing experience</h3><p>“I took this medication during my treatment and this is what happened to me.” Members can discuss their own care and experiences without having to sanitize the reality of TTC.</p></div>
+<div class="card"><h3>Intervene: prescribing to others</h3><p>“You should take this medication/dose” crosses into medical direction. Potentially prescriptive comments can be flagged, warned and escalated for repeated or dangerous violations.</p></div>
+</div>
+<div class="decision"><div class="big">The moderation target is harmful instruction — not uncomfortable emotion.</div><p>Verified medical contributors may provide general educational context, but peer status does not turn personal experience into medical authority.</p></div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><div class="eyebrow">08 · Designing for graduation</div>
+<h2>What happens when a member gets pregnant?</h2>
+<p>Pregnancy is a positive outcome for the member, but pregnancy content can be painful for someone still in treatment or coping with loss. The product should protect both without treating belonging as conditional.</p></div>
+<div class="flow">
+<div class="step"><span class="num">01</span><strong>Identity persists</strong><p>The member keeps the same pseudonymous profile, relationships and history.</p></div>
+<div class="step"><span class="num">02</span><strong>Status can evolve</strong><p>Journey context can voluntarily change to something like “Pregnant after TTC” without becoming an unavoidable badge in every interaction.</p></div>
+<div class="step"><span class="num">03</span><strong>Pregnancy content is opt-in</strong><p>Pregnancy-specific updates belong in a separate layer so members who cannot receive that content do not encounter it unexpectedly.</p></div>
+<div class="step"><span class="num">04</span><strong>Belonging can continue</strong><p>Graduates can still support conversations where appropriate; success does not automatically erase relationships built during the journey.</p></div>
+</div>
+<div class="insight">For this product, graduation from the core TTC experience can represent success — not churn to be prevented at all costs.</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">09 · MVP hypothesis</div>
+<h2>Test belonging before building everything.</h2>
+<p>The first version should answer one question: will people repeatedly return to a pseudonymous TTC community because persistent relationships and relevant context make them feel less alone?</p></div>
+<div class="system">
+<div class="ticket"><span class="tno">MUST</span><h3>Pseudonymous profile</h3><p>Persistent avatar/name plus optional journey context.</p><span class="tag">Trust · Continuity</span></div>
+<div class="ticket"><span class="tno">MUST</span><h3>General community feed</h3><p>Posts, comments and intent/content labels concentrated in one active space.</p><span class="tag">Liquidity · Belonging</span></div>
+<div class="ticket"><span class="tno">MUST</span><h3>Safety controls</h3><p>Mute/filter categories, report content, block members and enforce the medical-advice boundary.</p><span class="tag">Safety · Agency</span></div>
+<div class="ticket"><span class="tno">LATER / EARNED</span><h3>Journey spaces & private messaging</h3><p>Add focused rooms only when activity supports them; DMs remain consent-based rather than open by default.</p><span class="tag">Avoid premature fragmentation</span></div>
+</div>
+</div></section>
+
+<section class="evidence"><div class="wrap">
+<div class="section-head"><div class="eyebrow">10 · What I would measure</div>
+<h2>Not “How many people joined?” — “Did a community actually form?”</h2>
+<p>Because this concept is unvalidated, these are proposed measures for a pilot rather than results. I would combine behavioural signals with direct measures of perceived support and safety.</p></div>
+<div class="metrics">
+<div class="metric"><strong>D7 / D30</strong><p>Retention by cohort: do members return after the novelty of joining wears off?</p></div>
+<div class="metric"><strong>Reply rate</strong><p>What percentage of member posts receive a meaningful human response?</p></div>
+<div class="metric"><strong>Member-led %</strong><p>How much conversation begins organically rather than through platform/AI prompts?</p></div>
+<div class="metric"><strong>Belonging</strong><p>Short recurring survey: “I feel understood and supported here.”</p></div>
+</div>
+<div class="note">I would also watch time-to-first-response, repeat contributors, lurker-to-contributor movement, reports/blocks, medical-advice violations and the health of each focused space before allowing further fragmentation.</div>
+</div></section>
+
+<section class="dark"><div class="wrap">
+<div class="section-head"><div class="eyebrow">11 · What still needs validation</div>
+<h2>This is a product exploration, not a finished answer.</h2>
+<p>The concept currently rests on assumptions that should be challenged before a build: whether persistent pseudonymity creates meaningful switching value, whether journey context feels supportive rather than exposing, whether emotional filters help without creating avoidance, and whether people will move from existing social groups into a purpose-built community.</p></div>
+<div class="decision">
+<div class="big">Next step → validate the behaviour, not just the feature list.</div>
+<p>I would begin with interviews and a small seeded pilot, then test whether members actually form recurring relationships, whether the moderation model feels safe, and which community structures deserve to exist based on real participation.</p>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">12 · Reflection</div><h2>The product isn't the feed. It's the conditions around the people in it.</h2></div>
+<div class="reflection">
+<div class="quote">“Community value is created by members. Product's job is to make that value safer, easier to find and more likely to compound.”</div>
+<div>
+<p class="body-copy">This exploration changed my thinking from “What features should a TTC community have?” to “What conditions make a vulnerable community worth returning to?” That moved the work toward liquidity, identity, consent, emotional agency, moderation and lifecycle design.</p>
+<p class="body-copy" style="margin-top:18px">The biggest unresolved question is also the most important one: whether the proposed experience is meaningfully better than the behaviours people already have. I would not treat the concept as validated until real users show that they return for the relationships and context — not simply because the idea sounds supportive.</p>
+</div></div></div></section>
+
+<section class="next"><div class="wrap"><div class="next-card">
+<div><p>Case study 04 · Product exploration</p><h2>Back to selected work</h2><p>Next: Event Rental Marketplace — exploring trust, liquidity and operations in a two-sided marketplace.</p></div>
+<a class="btn" href="index.html#work">View all projects →</a>
+</div></div></section>
+</main><footer><div class="wrap">© 2026 Zainab Enifeni · Product Management Portfolio</div></footer>
+</body></html>
