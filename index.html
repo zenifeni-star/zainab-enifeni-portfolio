@@ -180,10 +180,12 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
-  object-position: center 28%;
+  object-position: center 35%;
   z-index: 0;
 }
-
+.hero-card::before {
+  display: none;
+}
 .hero-card::after {
   content: "";
   position: absolute;
@@ -199,8 +201,7 @@
 }
 
 .hero-card .mini-card {
-  position: absolute;
-  z-index: 2;
+  display: none;
 }
   /* About section portrait */
 .about-mark {
