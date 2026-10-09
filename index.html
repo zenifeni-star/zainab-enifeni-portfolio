@@ -167,6 +167,83 @@
       .mini-card.two { right: 18px; }
       .mini-card.three { left: 40px; }
     }
+/* Portfolio hero portrait */
+.hero-card {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero-portrait {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 28%;
+  z-index: 0;
+}
+
+.hero-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    90deg,
+    rgba(16, 42, 67, 0.30),
+    rgba(16, 42, 67, 0.06) 55%,
+    rgba(16, 42, 67, 0.24)
+  );
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero-card .mini-card {
+  position: absolute;
+  z-index: 2;
+}
+  /* About section portrait */
+.about-mark {
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.about-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  border-radius: inherit;
+}
+    /* Tools I Use */
+.tools-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 14px;
+  margin-top: 26px;
+}
+
+.tool-group {
+  background: #ffffff;
+  border: 1px solid #dcecf7;
+  border-radius: 18px;
+  padding: 22px;
+}
+
+.tool-group h3 {
+  color: #102a43;
+  font-size: 15px;
+  margin: 0 0 12px;
+}
+
+.tool-group p {
+  color: #66788a;
+  font-size: 14px;
+  line-height: 1.8;
+  margin: 0;
+}
   </style>
 </head>
 <body>
@@ -194,7 +271,8 @@
             <a class="btn secondary" href="#contact">Let's connect</a>
           </div>
         </div>
-        <div class="hero-card" aria-label="Product thinking visual">
+       <div class="hero-card" aria-label="Zainab Enifeni and her product thinking approach">
+  <img class="hero-portrait" src="zainab-enifeni-portrait.png" alt="Zainab Enifeni, Product Manager">
           <div class="mini-card one">
             <div class="mini-label">Discover</div>
             <div class="mini-title">Understand the real problem.</div>
@@ -261,7 +339,7 @@
             <div class="arrow">View case study →</div>
           </a>
           <a class="project" href="carenest.html">
-            <span class="tag">0→1 · AI · Research</span>
+            <span class="tag">0→1 · Discovery · Research</span>
             <h3>CareNest</h3>
             <h4>Personalized guidance for first-time mothers.</h4>
             <p>A research-led caregiving concept built around baby profiles, care history and contextual AI guidance.</p>
@@ -274,13 +352,13 @@
             <p>An anonymous, persistent support community designed around continuity, reciprocity and emotional safety.</p>
             <div class="arrow">View case study →</div>
           </a>
-          <a class="project" href="gatherly.html">
-            <span class="tag">Marketplace · Operations</span>
-            <h3>Gatherly</h3>
-            <h4>From party essentials to an event ecosystem.</h4>
-            <p>A two-sided marketplace concept connecting event customers with rental inventory, booking and logistics.</p>
-            <div class="arrow">View case study →</div>
-          </a>
+         <a class="project" href="gatherly.html">
+  <span class="tag">Marketplace · Trust · Product Strategy</span>
+  <h3>Gatherly</h3>
+  <h4>Making event rentals easier to book and trust.</h4>
+  <p>A two-sided marketplace concept exploring reliable inventory confirmation, protected transactions and fulfilment — designed to help event customers book with confidence.</p>
+  <div class="arrow">View case study →</div>
+</a>
         </div>
       </div>
     </section>
@@ -288,22 +366,44 @@
     <section id="skills" style="background:#f3eee4;">
       <div class="wrap">
         <div class="section-head">
-          <div class="eyebrow">Product toolkit</div>
+          <div class="eyebrow">Tools I Use</div>
           <h2>What I bring to the table.</h2>
           <p>The tools and thinking patterns I use to move from ambiguity to action.</p>
         </div>
-        <div class="skills-grid">
-          <div class="skill"><h3>Product Discovery</h3><p>User interviews · Problem framing · Journey mapping · Competitive research</p></div>
-          <div class="skill"><h3>Product Strategy</h3><p>Prioritization · Opportunity identification · MVP definition · Trade-offs</p></div>
-          <div class="skill"><h3>Product Delivery</h3><p>PRDs · User stories · Acceptance criteria · Product flows · Agile collaboration</p></div>
-          <div class="skill"><h3>Product Analytics</h3><p>North Star thinking · Activation · Retention · Conversion · Funnel thinking</p></div>
-        </div>
-      </div>
-    </section>
+       <div class="tools-grid">
+  <div class="tool-group">
+    <h3>Product Planning</h3>
+    <p> · Google Workspace </p>
+  </div>
 
+  <div class="tool-group">
+    <h3>Project Management</h3>
+    <p>Linear · ClickUp</p>
+  </div>
+
+  <div class="tool-group">
+    <h3>Design & Prototyping</h3>
+    <p>Figma · Lovable</p>
+  </div>
+
+  <div class="tool-group">
+    <h3>Development & Deployment</h3>
+    <p>GitHub · Netlify</p>
+     </div>
+   </div>
+  </div>
+</section>
+    
     <section id="about">
       <div class="wrap about">
-        <div class="about-mark">ZE</div>
+        <div class="about-mark">
+  <img
+    src="zainab-enifeni-about.jpg"
+    alt="Zainab Enifeni smiling"
+    class="about-photo"
+    loading="lazy"
+  >
+</div>
         <div class="about-copy">
           <div class="eyebrow">A little about me</div>
           <h2>Hi, I'm Zainab.</h2>
@@ -319,12 +419,12 @@
       <div class="wrap">
         <div class="contact">
           <div class="eyebrow" style="justify-content:center;">Let's talk product</div>
-          <h2>Have a product problem worth unpacking?</h2>
-          <p>I'd love to connect, learn about the problem you're solving, and talk product.</p>
-          <div class="actions" style="justify-content:center;">
-            <a class="btn primary" href="https://www.linkedin.com/in/zainab-enifeni/" target="_blank" rel="noopener">LinkedIn →</a>
-            <a class="btn secondary" href="mailto:YOUR-EMAIL@example.com">Email me</a>
-          </div>
+         <h2>Let's build something useful.</h2>
+<p>I'm open to Product Management opportunities where I can bring structured thinking, curiosity, and a passion for solving meaningful problems. Have something in mind? Let's connect.</p>
+<div class="actions" style="justify-content:center;">
+  <a class="btn primary" href="mailto:zenifeni@gmail.com">Email me →</a>
+  <a class="btn secondary" href="https://www.linkedin.com/in/zainab-enifeni/" target="_blank" rel="noopener">LinkedIn →</a>
+</div>
         </div>
       </div>
     </section>
