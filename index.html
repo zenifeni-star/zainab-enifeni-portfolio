@@ -236,6 +236,23 @@
   line-height: 1.8;
   margin: 0;
 }
+
+    /* Subtle, accessible portfolio motion */
+    @keyframes enterSoft { from { opacity: 0; transform: translateY(16px); } to { opacity: 1; transform: translateY(0); } }
+    .reveal { animation: enterSoft .65s ease both; }
+    .reveal:nth-child(2) { animation-delay: .08s; }
+    .reveal:nth-child(3) { animation-delay: .16s; }
+    .reveal:nth-child(4) { animation-delay: .24s; }
+    .project, .tool-group { transition: transform .25s ease, box-shadow .25s ease; }
+    .tool-group:hover { transform: translateY(-5px); box-shadow: 0 12px 30px rgba(16,42,67,.09); }
+    .tool-logo-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:14px 8px; margin-top:18px; }
+    .tool-item { display:flex; align-items:center; gap:9px; min-width:0; font-size:.8rem; color:var(--muted); }
+    .tool-item img { width:25px; height:25px; flex:none; object-fit:contain; transition:transform .25s ease; }
+    .tool-item:hover img { transform:scale(1.13) rotate(-3deg); }
+    .tool-group h3 { font-size:1rem; }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration:.01ms !important; animation-delay:0ms !important; transition-duration:.01ms !important; scroll-behavior:auto !important; }
+    }
   </style>
 </head>
 <body>
@@ -263,7 +280,7 @@
             <a class="btn secondary" href="#contact">Let's connect</a>
           </div>
         </div>
-       <div class="hero-card" aria-label="Zainab Enifeni and her product thinking approach">
+       <div class="hero-card reveal" aria-label="Zainab Enifeni and her product thinking approach">
   <img class="hero-portrait" src="zainab-enifeni-portrait.png.jpg" alt="Zainab Enifeni, Product Manager">
           <div class="mini-card one">
             <div class="mini-label">Discover</div>
@@ -315,7 +332,7 @@
           <h2>Products, problems & decisions.</h2>
           <p>A mix of real-world product work and self-initiated 0→1 case studies.</p>
         </div>
-        <div class="projects">
+        <div class="projects reveal">
           <a class="project featured" href="nestuge.html">
             <span class="tag">Real-world · Creator Economy</span>
             <h3>Nestuge</h3>
@@ -363,26 +380,11 @@
           <p>The tools and thinking patterns I use to move from ambiguity to action.</p>
         </div>
        <div class="tools-grid">
-  <div class="tool-group">
-    <h3>Product Planning</h3>
-    <p> · Google Workspace </p>
-  </div>
-
-  <div class="tool-group">
-    <h3>Project Management</h3>
-    <p>Linear · ClickUp</p>
-  </div>
-
-  <div class="tool-group">
-    <h3>Design & Prototyping</h3>
-    <p>Figma · Lovable</p>
-  </div>
-
-  <div class="tool-group">
-    <h3>Development & Deployment</h3>
-    <p>GitHub · Netlify</p>
-     </div>
-   </div>
+  <div class="tool-group reveal"><h3>Product Planning</h3><div class="tool-logo-grid"><div class="tool-item"><img src="https://cdn.simpleicons.org/googledocs" alt="" loading="lazy" onerror="this.style.display='none'"><span>Google Docs</span></div><div class="tool-item"><img src="https://cdn.simpleicons.org/googlesheets" alt="" loading="lazy" onerror="this.style.display='none'"><span>Google Sheets</span></div><div class="tool-item"><img src="https://cdn.simpleicons.org/notion" alt="" loading="lazy" onerror="this.style.display='none'"><span>Notion</span></div></div></div>
+  <div class="tool-group reveal"><h3>Project Management</h3><div class="tool-logo-grid"><div class="tool-item"><img src="https://cdn.simpleicons.org/linear" alt="" loading="lazy" onerror="this.style.display='none'"><span>Linear</span></div><div class="tool-item"><img src="https://cdn.simpleicons.org/clickup" alt="" loading="lazy" onerror="this.style.display='none'"><span>ClickUp</span></div></div></div>
+  <div class="tool-group reveal"><h3>Design &amp; Prototyping</h3><div class="tool-logo-grid"><div class="tool-item"><img src="https://cdn.simpleicons.org/figma" alt="" loading="lazy" onerror="this.style.display='none'"><span>Figma</span></div><div class="tool-item"><img src="https://cdn.simpleicons.org/canva" alt="" loading="lazy" onerror="this.style.display='none'"><span>Canva Pro</span></div></div></div>
+  <div class="tool-group reveal"><h3>Development &amp; Deployment</h3><div class="tool-logo-grid"><div class="tool-item"><img src="https://cdn.simpleicons.org/github" alt="" loading="lazy" onerror="this.style.display='none'"><span>GitHub</span></div><div class="tool-item"><img src="https://cdn.simpleicons.org/netlify" alt="" loading="lazy" onerror="this.style.display='none'"><span>Netlify</span></div><div class="tool-item"><span aria-hidden="true" style="font-size:1.4rem;color:var(--blue)">✦</span><span>AppDeploy</span></div></div></div>
+       </div>
   </div>
 </section>
     
