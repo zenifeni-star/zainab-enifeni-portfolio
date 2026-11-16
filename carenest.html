@@ -2,155 +2,253 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="description" content="CareNest case study — Zainab Enifeni, Product Manager">
+<meta name="description" content="CareNest case study — research-led maternal-confidence product discovery, prioritization and prototype work by Zainab Enifeni.">
 <title>CareNest Case Study | Zainab Enifeni</title>
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
 <style>
 :root{--navy:#102a43;--blue:#2f6f9f;--sky:#dcecf7;--cream:#fbf7ef;--gold:#c99a4a;--ink:#243447;--muted:#66788a;--white:#fff;--line:#dfe7ed;--shadow:0 18px 50px rgba(16,42,67,.10);--radius:24px}*{box-sizing:border-box;margin:0;padding:0}html{scroll-behavior:smooth}body{font-family:"DM Sans",sans-serif;color:var(--ink);background:var(--cream);line-height:1.7}a{color:inherit;text-decoration:none}.wrap{width:min(1080px,calc(100% - 40px));margin:auto}nav{position:sticky;top:0;z-index:10;background:rgba(251,247,239,.94);backdrop-filter:blur(14px);border-bottom:1px solid rgba(223,231,237,.8)}.nav-inner{height:76px;display:flex;align-items:center;justify-content:space-between}.brand{font-weight:700;color:var(--navy)}.back{font-size:.94rem;color:var(--muted)}.back:hover{color:var(--navy)}.hero{padding:90px 0 70px}.eyebrow{display:inline-flex;align-items:center;gap:8px;color:var(--blue);font-weight:700;font-size:.8rem;text-transform:uppercase;letter-spacing:.13em;margin-bottom:18px}.eyebrow:before{content:"";width:28px;height:2px;background:var(--gold)}h1,h2,.serif{font-family:"Playfair Display",serif;color:var(--navy)}h1{font-size:clamp(3.4rem,7vw,6.5rem);line-height:.96;letter-spacing:-.045em;max-width:900px}.dek{font-size:1.25rem;color:var(--muted);max-width:760px;margin-top:25px}.meta{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin-top:45px}.meta div{background:white;border:1px solid var(--line);border-radius:18px;padding:18px}.meta small{display:block;text-transform:uppercase;letter-spacing:.1em;color:var(--muted);font-size:.68rem;font-weight:700}.meta strong{display:block;color:var(--navy);margin-top:5px}.hero-panel{margin-top:55px;background:linear-gradient(145deg,#dcecf7,#f6f0df);border-radius:32px;padding:38px;box-shadow:var(--shadow)}.hero-panel .label{font-size:.76rem;text-transform:uppercase;letter-spacing:.12em;color:var(--blue);font-weight:700}.hero-panel blockquote{font-family:"Playfair Display",serif;font-size:clamp(1.7rem,3vw,2.5rem);line-height:1.25;color:var(--navy);margin-top:10px}section{padding:78px 0}.section-head{max-width:730px;margin-bottom:36px}.section-head h2{font-size:clamp(2.2rem,4vw,3.4rem);line-height:1.08;margin-bottom:12px}.section-head p,.body-copy{color:var(--muted)}.two{display:grid;grid-template-columns:1fr 1fr;gap:22px}.card{background:white;border:1px solid var(--line);border-radius:var(--radius);padding:28px}.card h3{color:var(--navy);font-size:1.2rem;margin-bottom:9px}.card p{color:var(--muted)}.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;align-items:stretch}.step{background:white;border:1px solid var(--line);border-radius:18px;padding:22px;position:relative}.step .num{font-size:.7rem;letter-spacing:.1em;color:var(--blue);font-weight:700}.step strong{display:block;color:var(--navy);margin-top:8px}.step p{font-size:.9rem;color:var(--muted);margin-top:6px}.dark{background:var(--navy);color:white}.dark h2,.dark h3{color:white}.dark .section-head p,.dark .card p{color:#c8d7e4}.dark .card{background:rgba(255,255,255,.07);border-color:rgba(255,255,255,.12)}.dark .card h3{color:white}.competitors{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.competitor{padding:22px;border-radius:20px;background:rgba(255,255,255,.07);border:1px solid rgba(255,255,255,.12)}.competitor strong{display:block;margin-bottom:8px}.competitor p{color:#c8d7e4;font-size:.9rem}.insight{margin-top:28px;border-left:3px solid var(--gold);padding:5px 0 5px 22px;font-family:"Playfair Display",serif;font-size:1.55rem;line-height:1.35}.matrix{display:grid;grid-template-columns:110px 1fr 1fr;grid-template-rows:auto 1fr 1fr;gap:10px;max-width:820px;margin:30px auto 0}.axis{display:grid;place-items:center;color:var(--muted);font-size:.75rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}.quad{min-height:180px;border:1px solid var(--line);border-radius:20px;padding:20px;background:white}.quad.high{background:#edf6fb}.quad small{color:var(--muted);font-weight:700}.pill{display:inline-block;margin:10px 7px 0 0;padding:7px 11px;border-radius:999px;background:var(--sky);color:var(--blue);font-size:.78rem;font-weight:700}.decision{margin-top:32px;background:linear-gradient(145deg,#102a43,#183e5c);color:white;border-radius:30px;padding:34px}.decision .big{font-family:"Playfair Display",serif;font-size:clamp(2rem,4vw,3rem);line-height:1.15}.decision p{color:#c8d7e4;margin-top:12px;max-width:800px}.system{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.ticket{background:white;border:1px solid var(--line);border-radius:20px;padding:24px}.ticket .tno{font-size:.7rem;color:var(--blue);font-weight:700;letter-spacing:.1em}.ticket h3{margin:7px 0;color:var(--navy);font-size:1.05rem}.ticket p{color:var(--muted);font-size:.9rem}.ticket .tag{display:inline-block;margin-top:13px;padding:5px 9px;background:#edf6fb;border-radius:999px;font-size:.7rem;color:var(--blue);font-weight:700}.auto-flow{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:28px 0}.auto-flow span{background:white;border:1px solid var(--line);border-radius:999px;padding:10px 14px;color:var(--navy);font-weight:600;font-size:.88rem}.auto-flow b{color:var(--gold)}.evidence{background:#f3eee4}.criteria{display:grid;grid-template-columns:1fr 1fr;gap:14px}.criterion{background:white;border-radius:18px;padding:20px;border:1px solid var(--line)}.criterion strong{color:var(--navy)}.criterion p{color:var(--muted);font-size:.9rem;margin-top:5px}.metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.metric{background:white;border:1px solid var(--line);border-radius:18px;padding:22px}.metric strong{color:var(--navy);display:block}.metric p{font-size:.88rem;color:var(--muted);margin-top:5px}.note{font-size:.82rem;color:var(--muted);margin-top:16px}.reflection{display:grid;grid-template-columns:.8fr 1.2fr;gap:35px;align-items:start}.quote{background:linear-gradient(145deg,#dcecf7,#f6f0df);border-radius:28px;padding:32px;font-family:"Playfair Display",serif;color:var(--navy);font-size:1.55rem;line-height:1.35}.next{padding:75px 0}.next-card{background:var(--navy);border-radius:32px;padding:42px;color:white;display:flex;justify-content:space-between;align-items:center;gap:25px}.next-card h2{color:white;font-size:2.3rem}.next-card p{color:#c8d7e4}.btn{display:inline-block;background:white;color:var(--navy);padding:12px 18px;border-radius:999px;font-weight:700;white-space:nowrap}footer{padding:32px 0;border-top:1px solid var(--line);color:var(--muted);font-size:.9rem}@media(max-width:800px){.meta,.flow,.competitors,.system,.metrics{grid-template-columns:1fr 1fr}.two,.reflection{grid-template-columns:1fr}.matrix{grid-template-columns:70px 1fr 1fr}.next-card{display:block}.next-card .btn{margin-top:20px}}@media(max-width:560px){.wrap{width:min(100% - 28px,1080px)}.hero{padding-top:60px}.meta,.flow,.competitors,.system,.metrics,.criteria{grid-template-columns:1fr}.matrix{display:block}.axis{margin:10px}.quad{margin-bottom:10px;min-height:auto}section{padding:58px 0}h1{font-size:3.5rem}.hero-panel{padding:26px}.next-card{padding:30px}}
+
+.bullet-list{padding-left:20px;margin-top:12px;color:var(--muted)}
+.bullet-list li{margin:8px 0}
+.data-wrap{overflow-x:auto;margin-top:22px;border:1px solid var(--line);border-radius:18px;background:white}
+.data-table{width:100%;border-collapse:collapse;min-width:680px}
+.data-table th,.data-table td{padding:14px 16px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}
+.data-table th{background:#edf6fb;color:var(--navy);font-size:.72rem;text-transform:uppercase;letter-spacing:.08em}
+.data-table td{color:var(--muted);font-size:.9rem}
+.data-table td strong{color:var(--navy)}
+.status-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:22px}
+.status-card{background:white;border:1px solid var(--line);border-radius:20px;padding:24px}
+.status-card h3{color:var(--navy);margin-bottom:8px}
+.status-card p,.status-card li{color:var(--muted);font-size:.92rem}
+.status-card ul{padding-left:18px;margin-top:10px}
+.status-card li{margin:6px 0}
+.callout{margin-top:24px;padding:24px;border-left:4px solid var(--gold);background:white;border-radius:0 18px 18px 0;color:var(--muted)}
+.callout strong{color:var(--navy)}
+.demo-card{background:linear-gradient(145deg,#102a43,#183e5c);color:white;border-radius:28px;padding:32px;display:flex;justify-content:space-between;align-items:center;gap:24px}
+.demo-card h3{color:white;font-size:1.35rem;margin-bottom:8px}
+.demo-card p{color:#c8d7e4;max-width:680px}
+.demo-card .btn{flex-shrink:0}
+@media(max-width:800px){.status-grid{grid-template-columns:1fr}.demo-card{display:block}.demo-card .btn{margin-top:18px}}
+
 </style>
 </head>
 <body>
 <nav><div class="wrap nav-inner"><a class="brand" href="index.html">ZAINAB ENIFENI</a><a class="back" href="index.html#work">← Back to selected work</a></div></nav>
 <main>
+
 <header class="hero"><div class="wrap">
-<div class="eyebrow">Self-initiated · 0→1 Product Discovery · Maternal Health</div>
+<div class="eyebrow">PM programme simulation · Discovery to prototype · Maternal confidence</div>
 <h1>CareNest</h1>
-<p class="dek">When research told me my idea was wrong — and turned an immunization-tracking concept into a Nigeria-first daily confidence companion for mothers of babies aged 0–12 months.</p>
+<p class="dek">Six interviews challenged an immunization-tracking hypothesis. I reframed the problem around maternal confidence, used RICE to rank candidate features, and translated the decision into requirements and a scoped prototype.</p>
 <div class="meta">
 <div><small>Role</small><strong>Product Manager</strong></div>
-<div><small>Research</small><strong>6 User Interviews</strong></div>
-<div><small>Focus</small><strong>Discovery · Strategy · MVP</strong></div>
-<div><small>Outputs</small><strong>Research · PRD · Wireframes · Prototype</strong></div>
+<div><small>Project type</small><strong>PM programme simulation</strong></div>
+<div><small>Discovery</small><strong>6 user interviews</strong></div>
+<div><small>Documented work</small><strong>Research · PRD · Wireframes · Prototype</strong></div>
 </div>
 <div class="hero-panel">
 <div class="label">The product lesson</div>
-<blockquote>The best product decision I made was choosing not to build the product I started with.</blockquote>
+<blockquote>I changed the problem before I built the product.</blockquote>
 </div></div></header>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">00 · My role and contribution</div>
+<h2>My work connected discovery to a decision the team could act on.</h2>
+<p>I worked as the Product Manager on CareNest within a PM-programme simulation. The sprint notes identify me as PM and record the research, prioritization, requirements and prototype work.</p></div>
+<div class="two">
+<div class="card"><h3>My documented contribution</h3>
+<ul class="bullet-list">
+<li>Prepared the interview guide and recruited six participants through an existing network and referrals.</li>
+<li>Conducted and synthesized six interviews, then reframed the problem when the immunization hypothesis was not supported.</li>
+<li>Compared candidate features using RICE and documented the prioritization rationale.</li>
+<li>Authored the post-research PRD, including ten user stories, Given/When/Then acceptance criteria and non-functional requirements.</li>
+<li>Documented sprint scope and translated the selected flows into wireframes and prototype work.</li>
+</ul></div>
+<div class="card"><h3>Project boundary</h3>
+<p>This was a programme simulation and prototype project, not a launched healthcare product. The evidence demonstrates discovery, product decisions, requirements and documented prototype delivery. It does not demonstrate clinical validation, external usability success, improved maternal confidence or achieved retention.</p></div>
+</div>
+</div></section>
 
 <section><div class="wrap">
 <div class="section-head"><div class="eyebrow">01 · Starting hypothesis</div>
 <h2>I began with a solution: immunization tracking.</h2>
-<p>My initial hypothesis was that Nigerian mothers of infants aged 0–12 months needed a better way to manage vaccine schedules. Rather than move directly into design, I used six structured interviews to test whether that problem was painful enough to deserve a product.</p></div>
-<div class="decision">
-<div class="big">Original hypothesis → Immunization tracking</div>
-<p>The research goal was not to prove the idea right. It was to understand how mothers actually managed the first year of care, where uncertainty appeared, and what they were already doing to cope.</p>
-</div>
+<p>My initial hypothesis was that Nigerian mothers of infants aged 0–12 months needed a better way to manage vaccine schedules. Rather than move directly into design, I used six structured interviews to understand how mothers managed the first year of care, where uncertainty appeared, and what support systems they already relied on.</p></div>
+<div class="decision"><div class="big">Original hypothesis → Immunization tracking</div>
+<p>The goal was to test whether this was a meaningful unmet need—not to prove the original idea right.</p></div>
 </div></section>
 
 <section class="dark"><div class="wrap">
 <div class="section-head"><div class="eyebrow">02 · Discovery</div>
-<h2>The interviews rejected my original assumption.</h2>
-<p>Immunization was raised organically by only 1 of 6 participants. When asked directly, all six described vaccine scheduling as manageable through health cards, spouses or family support. The stronger pattern was uncertainty: mothers were surrounded by information but still unsure whether they were caring for their babies correctly.</p></div>
+<h2>The interviews challenged my original assumption.</h2>
+<p>The strongest pattern was uncertainty in everyday care. Mothers were surrounded by information, but still unsure whether they were feeding and caring for their babies correctly. Immunization, by contrast, was generally manageable within this small sample.</p></div>
 <div class="metrics">
-<div class="metric"><strong>6/6</strong><p>Mothers described conflicting advice from family, WhatsApp, Google or clinic sources.</p></div>
-<div class="metric"><strong>6/6</strong><p>Feeding emerged as a recurring area of uncertainty and practical concern.</p></div>
-<div class="metric"><strong>1/6</strong><p>Raised immunization organically — evidence that my starting hypothesis was weak.</p></div>
-<div class="metric"><strong>4/6</strong><p>Had abandoned at least one baby app because it felt irrelevant, overwhelming or gave no reason to return.</p></div>
+<div class="metric"><strong>6/6</strong><p>Described uncertainty about whether they were caring for their infant correctly.</p></div>
+<div class="metric"><strong>5/6</strong><p>Raised maternal-confidence concerns without prompting.</p></div>
+<div class="metric"><strong>6/6</strong><p>Identified feeding as a significant source of uncertainty.</p></div>
+<div class="metric"><strong>6/6</strong><p>Described conflicting advice from sources such as family, WhatsApp, Google and clinic staff.</p></div>
+<div class="metric"><strong>1/6</strong><p>Raised immunization organically; all six described their scheduling approach as manageable when asked directly.</p></div>
+<div class="metric"><strong>4/6</strong><p>Had downloaded and later stopped using at least one baby-related app because it felt irrelevant, overwhelming or gave little reason to return.</p></div>
 </div>
-<div class="insight">The problem wasn't a shortage of information. It was a shortage of confidence in what information to trust — and what to do next.</div>
+<div class="insight">The problem was not simply a shortage of information. It was uncertainty about what information to trust—and what to do next.</div>
+<div class="note">Sample: six Nigerian mothers of infants aged 2–9 months; four were first-time mothers and two were not. Interviews were completed in a single-day sprint, with recruitment through an existing network and referrals. The interview summary lists Lagos, Osun and Port Harcourt, while the Full PRD lists Lagos, Ibadan and Kano. I have omitted locations because the records conflict. These findings are directional and should not be generalized to the wider market.</div>
 </div></section>
 
 <section><div class="wrap">
 <div class="section-head"><div class="eyebrow">03 · The pivot</div>
 <h2>I changed the problem before I changed the screens.</h2>
-<p>The research shifted CareNest from a vaccine-reminder concept to a maternal-confidence product: structured, age-specific support designed around the realities of Nigerian motherhood.</p></div>
+<p>The research shifted CareNest from a vaccine-reminder concept toward maternal confidence: helping mothers make everyday care decisions with guidance that feels relevant to their baby's stage and context.</p></div>
 <div class="flow">
 <div class="step"><span class="num">01</span><strong>I assumed</strong><p>Mothers needed help remembering and managing immunization schedules.</p></div>
-<div class="step"><span class="num">02</span><strong>I listened</strong><p>Six interviews surfaced feeding uncertainty, conflicting advice, emotional pressure and distrust.</p></div>
-<div class="step"><span class="num">03</span><strong>I reframed</strong><p>The core job became helping mothers feel capable of making everyday baby-care decisions.</p></div>
-<div class="step"><span class="num">04</span><strong>I narrowed</strong><p>The MVP focused on repeatable daily value rather than trying to solve every parenting need at once.</p></div>
+<div class="step"><span class="num">02</span><strong>I listened</strong><p>Six interviews surfaced feeding uncertainty, conflicting advice and persistent doubts about everyday care.</p></div>
+<div class="step"><span class="num">03</span><strong>I reframed</strong><p>The core problem became confidence in deciding how to care for a baby—not remembering a vaccine date.</p></div>
+<div class="step"><span class="num">04</span><strong>I focused</strong><p>Age-based feeding guidance became the clearest practical starting point, with a daily check-in as a supporting touchpoint.</p></div>
 </div>
 <div class="hero-panel" style="margin-top:28px">
 <div class="label">Reframed problem</div>
-<blockquote>How might CareNest help Nigerian mothers move from “Am I doing this right?” to informed, everyday confidence?</blockquote>
+<blockquote>Nigerian mothers of infants aged 0–12 months can lack confidence that they are caring for their baby correctly—particularly around feeding, development and finding trustworthy, contextually relevant guidance.</blockquote>
 </div>
+<p class="note">The interviews supported a qualitative change in direction. They did not establish market-wide prevalence or prove that the proposed product would solve the problem.</p>
 </div></section>
 
 <section class="evidence"><div class="wrap">
 <div class="section-head"><div class="eyebrow">04 · Prioritisation</div>
-<h2>The original idea didn't survive RICE either.</h2>
-<p>I used RICE scoring after research to compare candidate features instead of allowing attachment to the original concept to determine the roadmap.</p></div>
-<div class="criteria">
-<div class="criterion"><strong>9.6 · Age-Based Feeding Guidance</strong><p>Highest score. It addressed the most consistent practical pain and could provide clear, repeatable utility.</p></div>
-<div class="criterion"><strong>8.4 · Daily Confidence Check-In</strong><p>A lightweight daily touchpoint designed around the emotional problem and the need for a reason to return.</p></div>
-<div class="criterion"><strong>1.25 · Immunization Reminder</strong><p>The original concept ranked lowest and was deprioritized after the evidence showed mothers already had workable systems.</p></div>
-</div>
-<div class="insight">Research changed the problem. Prioritisation made sure the roadmap changed with it.</div>
+<h2>RICE translated the new direction into a feature sequence.</h2>
+<p>After the research pivot, I used RICE—Reach × Impact × Confidence ÷ Effort—to compare candidate features. The framework structured the tradeoffs; it did not independently validate the pivot.</p></div>
+<div class="data-wrap"><table class="data-table">
+<thead><tr><th>Candidate feature</th><th>Recorded RICE</th><th>RICE recommendation</th><th>Decision rationale</th></tr></thead>
+<tbody>
+<tr><td><strong>Age-Based Feeding Guidance</strong></td><td>9.6</td><td>MVP · Build first</td><td>Addresses the feeding uncertainty raised by all six participants.</td></tr>
+<tr><td><strong>Daily Confidence Check-in</strong></td><td>8.4</td><td>MVP · Build</td><td>Creates a lightweight opportunity for relevant daily support; repeat use remained a hypothesis to test.</td></tr>
+<tr><td><strong>Community Support Feed</strong></td><td>3.2</td><td>Phase 2</td><td>Offers peer support but introduces a broader experience and moderation needs.</td></tr>
+<tr><td><strong>Milestone Tracker</strong></td><td>1.67</td><td>Phase 2</td><td>Extends support beyond the initial feeding focus.</td></tr>
+<tr><td><strong>Immunization Reminder</strong></td><td>1.25</td><td>Deprioritized</td><td>Participants already described workable ways to manage vaccine schedules.</td></tr>
+<tr><td><strong>Expert Q&amp;A / Ask a Nurse</strong></td><td>1.2</td><td>Phase 3</td><td>Higher estimated effort lowered its relative priority in the scoring exercise.</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>Scoring correction:</strong> the RICE document's closing prose calls Immunization Reminder the lowest-scoring feature, but its own table gives Expert Q&amp;A 1.2 and Immunization Reminder 1.25. This case study follows the table. The document also describes Reach as a 1–10 scale and as users per month within the first three months; until that unit is clarified, these scores should be treated as relative planning estimates rather than actual user counts.</div>
+<div class="insight">Research changed the problem. RICE made the next feature decisions explicit.</div>
 </div></section>
 
 <section class="dark"><div class="wrap">
-<div class="section-head"><div class="eyebrow">05 · Competitive thinking</div>
-<h2>One of the most important competitors wasn't another app.</h2>
-<p>Competitive analysis became more useful when I stopped looking only for products that looked like CareNest and started looking at the behaviours mothers already relied on.</p></div>
+<div class="section-head"><div class="eyebrow">05 · Existing alternatives</div>
+<h2>Some of the strongest alternatives were already part of mothers' routines.</h2>
+<p>The interview summary identified WhatsApp groups, Google, family members and clinic staff as information sources. These options were familiar and immediate, even when advice conflicted. CareNest therefore had to offer more than another library of content: it needed to make the next useful action easier to identify.</p></div>
 <div class="two">
-<div class="card"><h3>The visible competitors</h3><p>Baby trackers, parenting apps and information products compete on features, content and convenience.</p></div>
-<div class="card"><h3>The invisible competitor</h3><p><strong>WhatsApp mother groups.</strong> They already provided immediacy, familiarity and social reassurance — even when the information itself could be inconsistent.</p></div>
+<div class="card"><h3>What mothers already used</h3><p>WhatsApp groups, Google searches, family advice and clinic staff were part of the existing information mix.</p></div>
+<div class="card"><h3>What CareNest needed to earn</h3><p>A place in that routine by making age-relevant guidance easier to find, understand and act on—without presenting generic information as a personal answer.</p></div>
 </div>
-<div class="decision"><div class="big">Compete with behaviour, not just products.</div><p>CareNest needed to earn a place in an existing support routine. A feature list alone would not be enough to change where mothers instinctively went when they needed reassurance.</p></div>
 </div></section>
 
 <section><div class="wrap">
-<div class="section-head"><div class="eyebrow">06 · MVP</div>
-<h2>I scoped the first experience around daily value.</h2>
-<p>The approved post-research MVP centered on Age-Based Feeding Guidance, a Daily Confidence Check-In and a Basic Community Feed. During wireframing, I deliberately focused first on the two core flows — feeding guidance and check-in — and deferred community work to avoid scope creep.</p></div>
-<div class="system">
-<div class="ticket"><span class="tno">CORE VALUE</span><h3>Age-Based Feeding Guidance</h3><p>Guidance changes with the baby's age so mothers see what is relevant now rather than searching through generic information.</p><span class="tag">Research-led · Highest RICE</span></div>
-<div class="ticket"><span class="tno">RETENTION</span><h3>Daily Confidence Check-In</h3><p>A low-effort daily prompt designed to acknowledge how the mother is feeling and provide one useful, supportive next step.</p><span class="tag">Daily habit · Emotional value</span></div>
-<div class="ticket"><span class="tno">COMMUNITY</span><h3>Basic Community Feed</h3><p>A moderated feed connecting mothers around relevant stages without turning the MVP into an unstructured group chat.</p><span class="tag">Scoped · Moderated</span></div>
+<div class="section-head"><div class="eyebrow">06 · Scope and delivery</div>
+<h2>I separated the broader requirements from what the sprint record says was prototyped.</h2>
+<p>The project documents do not describe one consistent MVP baseline. Rather than collapse them into a single “approved MVP,” I separate requirements, prioritization recommendations and reported delivery.</p></div>
+<div class="status-grid">
+<div class="status-card"><h3>Proposed requirements</h3><p>The post-research Full PRD marks itself approved by programme coaches and lists feeding guidance, daily check-in and a basic community feed as MVP scope. The Week 6 PRD uses a different Core / Supporting / Delight classification and includes a broader feature set.</p></div>
+<div class="status-card"><h3>Prioritization recommendation</h3><p>The RICE document recommends feeding guidance and check-in first, with community in Phase 2. This differs from the Full PRD's MVP list; no change log establishes which scope version superseded the other.</p></div>
+<div class="status-card"><h3>Reported delivery</h3><p>Sprint notes report wireframes for feeding guidance and check-in, followed by a Lovable prototype covering onboarding, feeding guidance and check-in. Community reached wireframes, not a completed prototype flow.</p></div>
 </div>
-<div class="note">The functional prototype covered Feeding Guidance, Daily Check-In and Onboarding. Community wireframes were completed separately as the scope expanded in the following sprint.</div>
+<div class="data-wrap"><table class="data-table">
+<thead><tr><th>Capability</th><th>Requirements / prioritization record</th><th>Delivery evidence</th></tr></thead>
+<tbody>
+<tr><td><strong>Feeding guidance</strong></td><td>In scope in the Full PRD; RICE 9.6, build first.</td><td>Wireframes and prototype flow reported in sprint notes; Lovable brief documents the age-selection journey.</td></tr>
+<tr><td><strong>Daily check-in</strong></td><td>In scope in the Full PRD; RICE 8.4, build.</td><td>Wireframes and prototype flow reported in sprint notes.</td></tr>
+<tr><td><strong>Community</strong></td><td>In scope in the Full PRD; RICE recommends Phase 2. Week 6 PRD describes Community Q&amp;A as Supporting.</td><td>Community wireframes reported; not listed as a completed prototype flow.</td></tr>
+<tr><td><strong>Onboarding / baby context</strong></td><td>Full PRD includes a baby-date-of-birth user story; Week 6 PRD specifies authentication and baby profile.</td><td>Onboarding prototype reported; Lovable brief specifically documents age-in-months selection. It does not establish persistent profile or authentication behavior.</td></tr>
+<tr><td><strong>Milestone tracking</strong></td><td>Core in the Week 6 PRD; not in the RICE first-build recommendations.</td><td>No completed prototype evidence in the reviewed sprint notes.</td></tr>
+<tr><td><strong>Immunization</strong></td><td>Excluded from MVP in the Full PRD; Supporting in the Week 6 PRD; deprioritized in RICE.</td><td>Not listed among the completed prototype flows.</td></tr>
+</tbody></table></div>
+<p class="note">The sprint notes describe the Lovable prototype as functional and record coach review. This is a programme delivery record, not independent user acceptance testing.</p>
 </div></section>
 
 <section class="evidence"><div class="wrap">
-<div class="section-head"><div class="eyebrow">07 · From discovery to prototype</div>
-<h2>The research flowed into requirements, not just a presentation.</h2>
-<p>I carried the pivot through the product-development chain: research synthesis, prioritisation, strategy, personas, PRD, acceptance criteria, wireframes, sprint planning and a functional interactive prototype.</p></div>
+<div class="section-head"><div class="eyebrow">07 · Documented feeding journey</div>
+<h2>The prototype flow moved from a broad question to age-relevant guidance.</h2>
+<p>The Lovable brief describes this four-step path. It documents the intended interaction, not measured task success.</p></div>
 <div class="flow">
-<div class="step"><span class="num">01</span><strong>Research</strong><p>Interview guide → six interviews → synthesis → pivot decision.</p></div>
-<div class="step"><span class="num">02</span><strong>Strategy</strong><p>Personas → competitive analysis → RICE → North Star and product strategy.</p></div>
-<div class="step"><span class="num">03</span><strong>Definition</strong><p>PRD → 10 user stories → Given/When/Then acceptance criteria → non-functional requirements.</p></div>
-<div class="step"><span class="num">04</span><strong>Prototype</strong><p>Wireframes → scoped sprint work → interactive onboarding, feeding and check-in experience.</p></div>
+<div class="step"><span class="num">01 · ENTRY</span><strong>Welcome / Splash</strong><p>The mother opens CareNest.</p></div>
+<div class="step"><span class="num">02 · START</span><strong>Baby Age Selection</strong><p>She taps Get Started and selects the baby's age in months.</p></div>
+<div class="step"><span class="num">03 · RELEVANCE</span><strong>Feeding Guidance Results</strong><p>The product displays guidance for the selected age stage.</p></div>
+<div class="step"><span class="num">04 · DETAIL</span><strong>Guidance Detail</strong><p>She opens a guidance card to explore a specific topic.</p></div>
 </div>
+<div class="callout"><strong>Boundary:</strong> the brief documents age-in-months selection. It does not establish date-of-birth calculation, persistent baby profiles, authentication or automatic age-stage updates in this original programme prototype.</div>
 </div></section>
 
 <section class="dark"><div class="wrap">
-<div class="section-head"><div class="eyebrow">08 · Designing for the Nigerian context</div>
-<h2>“Relevant” was a product requirement, not a branding line.</h2>
-<p>Interviewees had already abandoned baby apps that felt disconnected from their reality. The requirements therefore treated local context, low-bandwidth use and trust signals as part of the experience itself.</p></div>
+<div class="section-head"><div class="eyebrow">08 · Designing for context</div>
+<h2>“Relevant” was a product requirement, not just a positioning line.</h2>
+<p>The Full PRD specified constraints intended to make the experience usable in the target context. These were requirements, not verified performance results.</p></div>
 <div class="criteria">
-<div class="criterion"><strong>Android first</strong><p>The MVP prioritized the dominant device context for the target users.</p></div>
-<div class="criterion"><strong>3G-conscious performance</strong><p>Core experiences were specified to load quickly and keep session data usage low.</p></div>
-<div class="criterion"><strong>Nigeria-specific guidance</strong><p>Content was intended to be locally relevant and visibly reviewed rather than presented as generic parenting advice.</p></div>
-<div class="criterion"><strong>Accessible core flows</strong><p>Minimum font sizing, contrast and screen-reader compatibility were included in the requirements.</p></div>
+<div class="criterion"><strong>Android first</strong><p>The PRD selected Android as the MVP platform, with iOS listed for a later phase.</p></div>
+<div class="criterion"><strong>3G-conscious performance</strong><p>The requirement specified a load time under three seconds on a standard Nigerian 3G connection.</p></div>
+<div class="criterion"><strong>Low data usage</strong><p>Core guidance and check-in experiences were specified to function under 5 MB per session.</p></div>
+<div class="criterion"><strong>Trust and accessibility</strong><p>The PRD specified Nigeria-specific content labels, reviewer credentials, minimum 16 px text, high contrast and screen-reader compatibility.</p></div>
 </div>
 </div></section>
 
 <section><div class="wrap">
-<div class="section-head"><div class="eyebrow">09 · Measuring the hypothesis</div>
-<h2>The metrics were designed to test whether confidence could become a habit.</h2>
-<p>These were MVP targets, not achieved post-launch results. They were defined to test whether mothers returned, used the core experiences and found the product genuinely useful.</p></div>
-<div class="metrics">
-<div class="metric"><strong>30%</strong><p>Target share of registered users active daily — the proposed North Star signal for habit formation.</p></div>
-<div class="metric"><strong>&gt;40%</strong><p>7-day retention target, testing whether CareNest survived the early abandonment window.</p></div>
-<div class="metric"><strong>&gt;60%</strong><p>Target Daily Check-In completion among active users.</p></div>
-<div class="metric"><strong>&gt;4/5</strong><p>Target user-satisfaction score as a qualitative signal that the confidence problem was being addressed.</p></div>
+<div class="section-head"><div class="eyebrow">09 · Measurement and validation</div>
+<h2>I separated the original targets from a clearer proposed value measure.</h2>
+<p>The PRD's figures are month-one targets, not achieved results. I would also make the North Star more directly reflect a completed care action rather than an app open.</p></div>
+<div class="decision">
+<div class="label">Proposed measurement refinement · not in the original PRD</div>
+<div class="big">Weekly Guided Care Actions (WGCA)</div>
+<p>Count distinct users who complete at least one qualifying action in a rolling seven-day period: either finish an age-relevant guidance item, or submit a daily check-in and view its recommendation.</p>
+<p><strong>Weekly Guided Care Action Rate</strong> = WGCA ÷ weekly active registered users × 100.</p>
 </div>
-<div class="note">The PRD also targeted &gt;50% completion among users who opened Feeding Guidance.</div>
+<div class="data-wrap"><table class="data-table">
+<thead><tr><th>Original PRD metric</th><th>Month-one target</th><th>Definition / measurement caution</th></tr></thead>
+<tbody>
+<tr><td><strong>Daily Active Sessions / registered users active daily</strong></td><td>30%</td><td>The PRD expresses a user percentage, not a session count. “Daily active-user rate” is the clearer label if retaining this target.</td></tr>
+<tr><td><strong>7-day retention</strong></td><td>&gt;40%</td><td>Define the activation cohort and denominator before measurement.</td></tr>
+<tr><td><strong>Check-in completion</strong></td><td>&gt;60% of daily active users</td><td>This measures adoption among active users, not start-to-submit flow completion.</td></tr>
+<tr><td><strong>Feeding-guidance completion</strong></td><td>&gt;50% of users who open the guidance tab</td><td>Define the content-completion event before implementation.</td></tr>
+<tr><td><strong>User satisfaction</strong></td><td>&gt;4.0 / 5.0</td><td>A supporting perception measure; it does not replace a maternal-confidence outcome measure.</td></tr>
+</tbody></table></div>
+<div class="callout"><strong>Proposed validation:</strong> run five moderated prototype sessions with mothers of infants aged 0–12 months. Observe whether they can find age-relevant guidance, explain a practical next step and complete the check-in. Ask the same short confidence question before and after the task. Five sessions provide early usability evidence, not statistical proof.</div>
+<p class="note">No external usability results, production analytics, retention outcomes or measured change in maternal confidence were available in the reviewed project files.</p>
+</div></section>
+
+<section class="evidence"><div class="wrap">
+<div class="section-head"><div class="eyebrow">10 · Limitations and evidence boundaries</div>
+<h2>What this project demonstrates—and what it does not.</h2>
+<p>CareNest demonstrates a research-led product decision and documented prototype work. The evidence has clear limits.</p></div>
+<div class="criteria">
+<div class="criterion"><strong>Small directional sample</strong><p>Six interviews completed in one day, with participants recruited through an existing network and referrals. The findings are not a market prevalence estimate.</p></div>
+<div class="criterion"><strong>Conflicting source details</strong><p>The interview summary and Full PRD list different interview locations. Locations are omitted pending verification.</p></div>
+<div class="criterion"><strong>Unresolved scope history</strong><p>The RICE recommendations and PRD feature classifications differ. No change log establishes the definitive final MVP baseline.</p></div>
+<div class="criterion"><strong>Estimated prioritization inputs</strong><p>RICE Reach has an ambiguous unit in the source document. Scores are retained as planning estimates, not measured demand.</p></div>
+<div class="criterion"><strong>No external validation results</strong><p>The reviewed files do not contain moderated usability results, production analytics or measured confidence and retention outcomes.</p></div>
+<div class="criterion"><strong>No clinical validation claim</strong><p>The PRD specified reviewer credentials, but the reviewed evidence does not establish completed clinical-content review or clinical efficacy.</p></div>
+</div>
 </div></section>
 
 <section><div class="wrap">
-<div class="section-head"><div class="eyebrow">10 · Reflection</div><h2>What CareNest taught me about 0→1 product work.</h2></div>
+<div class="section-head"><div class="eyebrow">11 · Later iteration · November 2026</div>
+<h2>A separate Hybrid Care Guide iteration extended the concept.</h2>
+<p>After the original programme prototype, a later AppDeploy iteration expanded CareNest into a baby profile, AI-assisted feeding, sleep and soothing guidance, and private care history. This is a separate educational demonstration—not part of the original programme prototype and not medical advice.</p></div>
+<div class="demo-card">
+<div><h3>CareNest Hybrid Care Guide · Live demonstration</h3>
+<p>The AppDeploy record shows the app as deployed. Its stored test file defines scenarios for baby-profile management, guided and free-text care guidance, care history, emergency guardrails and failure handling; it does not contain a complete pass/fail result record. No clinical validation or user outcome is claimed.</p></div>
+<a class="btn" href="https://carenest-7d4fpw.v2.appdeploy.ai/" target="_blank" rel="noopener noreferrer">View later iteration ↗</a>
+</div>
+</div></section>
+
+<section><div class="wrap">
+<div class="section-head"><div class="eyebrow">12 · Reflection</div><h2>What CareNest taught me about early product work.</h2></div>
 <div class="reflection">
 <div class="quote">“Don't fall in love with the solution strongly enough to ignore the problem.”</div>
 <div>
-<p class="body-copy">CareNest began with an idea I could easily have defended all the way into a prototype. Instead, the interviews gave me permission to discard it. That made the project stronger: the product direction came from repeated user patterns rather than my attachment to the starting concept.</p>
-<p class="body-copy" style="margin-top:18px">It also changed how I think about competitors. Mothers were not choosing only between parenting apps; they were choosing between CareNest and habits that already felt natural — calling family, searching Google, opening WhatsApp. Product discovery became less about asking “What features do competitors have?” and more about asking “What behaviour am I asking someone to replace?”</p>
-</div></div></div></section>
+<p class="body-copy">CareNest began with an idea I could easily have defended. The interviews gave me a reason to change direction before more time was invested in the wrong feature. That was the most important product decision in the project.</p>
+<p class="body-copy" style="margin-top:16px">I also learned to keep three things separate: what research suggests, what prioritization recommends and what a prototype demonstrates. RICE can make tradeoffs visible, but it cannot replace discovery. A prototype can make a hypothesis tangible, but it cannot prove user value without testing.</p>
+</div>
+</div>
+<p class="note">Evidence base: CareNest User Interview Findings Summary, RICE Prioritisation, Full PRD, Week 6 PRD, Sprint Planning Notes, and Lovable brief. Interview locations are intentionally omitted because the summary and PRD conflict.</p>
+</div></section>
 
-<section class="next"><div class="wrap"><div class="next-card">
-<div><p>Case study 03</p><h2>Back to selected work</h2><p>Next: TTC Community — designing belonging, trust and repeat participation around a sensitive journey.</p></div>
-<a class="btn" href="index.html#work">View all projects →</a>
-</div></div></section>
+<section class="next"><div class="wrap">
+<div class="next-card"><div><div class="eyebrow" style="color:#dcecf7">Case study 03</div><h2>Next: Kindred</h2><p>Designing belonging, trust and safety in an invitation-only TTC community.</p></div><a class="btn" href="ttc-community.html">Explore Kindred →</a></div>
+</div></section>
+
 </main><footer><div class="wrap">© 2026 Zainab Enifeni · Product Management Portfolio</div></footer>
 </body></html>
