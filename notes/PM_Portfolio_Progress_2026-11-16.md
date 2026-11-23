@@ -53,3 +53,34 @@ Do not count page listings as polished case studies. The quality bar remains: na
 ## Next milestone
 
 Review the CareNest v1.1 branch and, after approval, merge/publish it and verify the live page. Then update the existing Kindred/TTC Community case study using the already documented invitation-only pilot, circles/shared feed, pseudonymous participation, moderation, appeals and medical-safety boundaries. Do not start another project or write another PRD while these existing case studies remain unfinished.
+
+
+## Final QA pass — 23 November 2026
+
+**Branch state:** `review/carenest-case-study-v1-1-2026-11-16` remains unmerged. A fresh GitHub comparison showed the review branch ahead of `main`; `main` still contains the older CareNest page. No merge, deploy or publication was performed.
+
+### QA findings and action taken
+
+- Rechecked the current review-branch CareNest HTML and progress record rather than relying on the prior summary.
+- Confirmed the case page contains the contribution boundary, six-person sample limitations, omitted conflicting interview locations, corrected RICE values (Expert Q&A 1.2; Immunization Reminder 1.25), the PRD/RICE scope discrepancy, Reach-unit ambiguity, original month-one targets, proposed WGCA definition, validation limits and separate later Hybrid Care Guide iteration.
+- Confirmed the page has a document title, English language declaration, viewport metadata, responsive layout rules, reduced-motion handling, no placeholder copy, and a working in-page narrative structure.
+- Found that the homepage card still described CareNest as an “Independent MVP” for “first-time mothers” and made the separate Hybrid Care Guide look like the same original project. Updated the card on this review branch only to describe the PM-programme simulation, the six-interview pivot and documented prototype work. The demo link is now explicitly labeled as a separate later iteration.
+- The case-study HTML currently contains no original programme prototype screenshots. A CareNest-branded image is present in the Library, but no original onboarding/feeding/check-in screen captures were found in the reviewed sources. Do not substitute screenshots from the later Hybrid Care Guide. Add original prototype screens only if recoverable; otherwise the flow description remains the available visual evidence.
+- The live Netlify page could not be fetched through the available web inspection route during this run. Since the review branch remains unmerged, the v1.1 case-study page is not considered live or verified.
+
+### Approval-ready checklist
+
+1. Review the revised CareNest page on the branch.
+2. Confirm the homepage card accurately describes the programme simulation and separate later demo.
+3. If available, supply or recover 2–3 screenshots from the original programme prototype; do not use later Hybrid Care Guide screens as substitutes.
+4. Approve merging the review branch. No merge or deployment should occur before explicit approval.
+5. After approval and publication, verify the live CareNest page, internal navigation and separate demo link, then audit the rendered page once more.
+
+### Portfolio position after this QA pass
+
+- **Nestuge and Clinsights:** previously reported published; still not re-audited against the current full quality bar.
+- **CareNest:** copy and homepage summary revised on the review branch; awaiting explicit approval, merge/publication and live verification. Not yet counted as polished.
+- **Kindred / TTC Community:** remains next, but work must wait until CareNest is approved, published and verified.
+- **Gatherly and Rentwise:** existing pages and live MVP links; not yet audited against the full quality bar.
+
+No new project or PRD was started. The next milestone remains approval and publication of the existing CareNest revision, not another duplicate document.
